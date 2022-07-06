@@ -3,4 +3,63 @@ body{
     padding:0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    padding:15px;
+    height:60%;
+    width:70%;
+    border-radius: 12px;
+}
+
+.left{
+    border:none;
+    padding:12px;
+}
+
+.heading{
+    font-size: 18px;
+    color: hsl(184, 14%, 56%);
+}
+
+.row1,.row2{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+input.form-control{
+    background: url("images/icon-dollar.svg");
+    background-position-y: center ;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+.btn{
+    background-color: hsl(183, 100%, 15%);
+    color:white;
+    width:100%;
+    min-width:80px;
+    font-size: 18px;
+}
+
+.mid{
+    margin:auto 15px;
+}
+
+.custom{
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(184, 14%, 56%);
+}
+
+.right{
+    background-color: hsl(183, 100%, 15%);
 }

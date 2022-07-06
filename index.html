@@ -18,27 +18,50 @@
 
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-
+  <main class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card left">
+          <form>
+            <div class="form-group">
+              <label class="heading">Bill</label>
+              <input type="" class="form-control" placeholder="0">
+            </div>
+            <div class="row">
+              <h1 class="heading">Select Tip %</h1>
+              <div class="row1">
+                <button class="btn ">5%</button>
+                <button class="btn mid">10%</button>
+                <button class="btn ">15%</button>
+              </div>
+              <div class="row2 mt-3">
+                <button class="btn ">25%</button>
+                <button class="btn mid">50%</button>
+                <input class="btn custom" type="" value="Custom">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="heading" >Number of People</label>
+              <input type="" class="form-control" placeholder="0">
+            </div>
+          </form>         
+        </div>     
+      </div>
+      <div class="col">
+        <div class="card right">
+          <div class="row">
+            <div class="col"> Tip Amount <span>/ person</span></div>
+            <div class="col"><img src="images/icon-dollar.svg" alt="dollar_img">0.00</div>    
+          </div>
+          <div class="row">
+            <div class="col"> Total <span>/ person</span></div>
+            <div class="col"><img src="images/icon-dollar.svg" alt="dollar_img">0.00</div>    
+          </div>
+          <div class="btn btn-large">Reset</div>  
+        </div>    
+      </div>      
+    </div>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
