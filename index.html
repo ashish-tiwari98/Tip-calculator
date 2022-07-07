@@ -22,30 +22,30 @@
     <div class="row">
       <div class="col">
         <div class="card left">
-          <form>
-            <div class="form-group">
+          <form name="myform" onsubmit="isNumberKey(event)">
+            <div class="form-group mb-4" name="grp">
               <label class="heading">Bill</label>
-              <input type="" class="form-control" placeholder="0">
+              <input  name="amt" class="form-control bill" placeholder="0" required  autocomplete="off" onkeypress="return isNumberKey(event)">
             </div>
-            <div class="row">
+            <div class="row mb-4">
               <h1 class="heading">Select Tip %</h1>
               <div class="row1">
-                <button class="btn ">5%</button>
-                <button class="btn mid">10%</button>
-                <button class="btn ">15%</button>
+                <button name="btn" value="5" class="btn">5%</button>
+                <button name="btn" value="10" class="btn mid">10%</button>
+                <button name="btn" value="15" class="btn ">15%</button>
               </div>
               <div class="row2 mt-3">
-                <button class="btn ">25%</button>
-                <button class="btn mid">50%</button>
-                <input class="btn custom" type="" value="Custom">
+                <button name="btn" value="25" class="btn">25%</button>
+                <button name="btn" value="50" class="btn mid">50%</button>
+                <input name="btn" class="btn custom" value="Custom" onkeypress="return isNumberKey(event)">
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" name="grp">
               <label class="heading" >Number of People</label>
-              <input type="" class="form-control" placeholder="0">
+              <input type="number" name="num" class="form-control people" required placeholder="0" min="1"  autocomplete="off" onkeypress="return isNumberKey(event)">
             </div>
-          </form>         
-        </div>     
+          </form>
+        </div>
       </div>
       <div class="col">
         <div class="card right">

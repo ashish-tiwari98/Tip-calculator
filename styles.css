@@ -24,7 +24,7 @@ body{
 }
 
 .heading{
-    font-size: 18px;
+    font-size: 14px;
     color: hsl(184, 14%, 56%);
 }
 
@@ -33,14 +33,40 @@ body{
     justify-content:space-between;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 input.form-control{
-    background: url("images/icon-dollar.svg");
+    background-color: hsl(189, 41%, 97%);
     background-position-y: center ;
     background-origin: content-box;
     background-repeat: no-repeat;
+    background-size: 10px;
     text-align: right;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%) !important;
+    font-size:20px;
+}
+
+.form-control:focus {
+    border:2px solid hsl(172, 67%, 45%);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px hsl(172, 67%, 45%,0.8);
+  }
+
+.bill{
+    background: url("images/icon-dollar.svg");
+}
+
+.people{
+    background: url("images/icon-person.svg");
 }
 
 .btn{
@@ -58,6 +84,17 @@ input.form-control{
 .custom{
     background-color: hsl(189, 41%, 97%);
     color:hsl(184, 14%, 56%);
+}
+
+.warn{
+    float:right;
+    content: "Can't be zero";
+    color:red;
+}
+
+.warn + .form-control:focus{
+    border:2px solid red !important;
+    box-shadow: none;
 }
 
 .right{
