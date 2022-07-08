@@ -33,17 +33,6 @@ body{
     justify-content:space-between;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 input.form-control{
     background-color: hsl(189, 41%, 97%);
     background-position-y: center ;
@@ -77,13 +66,13 @@ input.form-control{
     font-size: 18px;
 }
 
-.row1>.btn:hover:not(.custom), .row2>.btn:hover:not(.custom){
+.row1>.btn:hover:not(.custom), .row2>.btn:hover:not(.custom), .selected{
     background-color: hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
     border:none;
 }
 
-.custom:hover{
+.custom:hover, .inputselect{
     border:2px solid hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
 }
@@ -110,7 +99,7 @@ input.form-control{
 .right{
     background-color: hsl(183, 100%, 15%);
     height:100%;
-    padding:35px 30px;
+    padding:30px 30px;
     width:96%;
     margin-top: 18px;
 }
