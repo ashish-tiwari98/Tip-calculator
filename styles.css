@@ -25,7 +25,7 @@ body{
 
 .heading{
     font-size: 14px;
-    color: hsl(184, 14%, 56%);
+    color: hsl(184, 14%, 36%);
 }
 
 .row1,.row2{
@@ -77,6 +77,16 @@ input.form-control{
     font-size: 18px;
 }
 
+.row1>.btn:hover:not(.custom), .row2>.btn:hover:not(.custom){
+    background-color: hsla(172, 67%, 45%,0.5);
+    color:hsl(183, 100%, 15%);
+    border:none;
+}
+
+.custom:hover{
+    border:2px solid hsla(172, 67%, 45%,0.5);
+    color:hsl(183, 100%, 15%);
+}
 .mid{
     margin:auto 15px;
 }
@@ -99,4 +109,50 @@ input.form-control{
 
 .right{
     background-color: hsl(183, 100%, 15%);
+    height:100%;
+    padding:35px 30px;
+    width:96%;
+    margin-top: 18px;
+}
+
+.right .row{
+    height:20%;
+}
+
+.right .col{
+    color:white;
+    font-size:14px;
+    width:100%;
+    padding: 10px;
+}
+
+.right .col span{
+    color:hsl(184, 14%, 56%);
+    font-size: 12px;
+    display: block;
+}
+
+.result{
+    color:hsl(172, 67%, 45%) !important;
+    font-size: 30px !important;
+    text-align: right;
+    margin-top:-10px;
+}
+
+.result svg{
+    height: 22px;
+    stroke:hsl(172, 67%, 45%);
+}
+
+.reset{
+    position: absolute;
+    bottom:10%;
+    width:85%;
+    color: hsla(172, 67%, 45%,0.3);
+    background-color:hsla(172, 67%, 45%,0.3);
+}
+
+.reset:hover{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 64%, 63%);
 }
