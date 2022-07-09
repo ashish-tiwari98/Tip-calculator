@@ -6,6 +6,17 @@ body{
     background-color: hsl(185, 41%, 84%);
 }
 
+body>h1{
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    margin-top:50px;
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+h1 span{
+    display: block;
+}
+
 .container{
     position: absolute;
     top:50%;
@@ -13,7 +24,6 @@ body{
     transform:translate(-50%,-50%);
     background-color: white;
     padding:15px;
-    height:60%;
     width:70%;
     border-radius: 12px;
 }
@@ -28,8 +38,7 @@ body{
     color: hsl(184, 14%, 36%);
 }
 
-.row1,.row2{
-    display: flex;
+.row{
     justify-content:space-between;
 }
 
@@ -64,9 +73,10 @@ input.form-control{
     width:100%;
     min-width:80px;
     font-size: 18px;
+    margin-bottom: 28px;
 }
 
-.row1>.btn:hover:not(.custom), .row2>.btn:hover:not(.custom), .selected{
+.row>.btn:hover:not(.custom), .selected{
     background-color: hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
     border:none;
@@ -75,9 +85,6 @@ input.form-control{
 .custom:hover, .inputselect{
     border:2px solid hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
-}
-.mid{
-    margin:auto 15px;
 }
 
 .custom{
@@ -98,14 +105,11 @@ input.form-control{
 
 .right{
     background-color: hsl(183, 100%, 15%);
-    height:100%;
+    height:95%;
     padding:30px 30px;
     width:96%;
-    margin-top: 18px;
-}
-
-.right .row{
-    height:20%;
+    margin-top: 10px;
+    border-radius: 12px;
 }
 
 .right .col{
@@ -135,13 +139,36 @@ input.form-control{
 
 .reset{
     position: absolute;
+    left:0;
     bottom:10%;
     width:85%;
     color: hsla(172, 67%, 45%,0.3);
     background-color:hsla(172, 67%, 45%,0.3);
+    margin:auto 7.5%;
 }
 
 .reset:hover{
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 64%, 63%);
+}
+
+@media only screen and (max-width:870px){
+    .container{
+        margin:15% auto;
+    }
+
+    .right{
+        margin:15px 8px;
+        width:calc(100% - 16px);
+    }
+
+    .right .row{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:588px){
+    .container{
+        width:90%;
+    }
 }
