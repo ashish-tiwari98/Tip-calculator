@@ -17,16 +17,11 @@ h1 span{
     display: block;
 }
 
-@media only screen and (min-width:870px){
-    .container{
+.container{
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    }
-}
-
-.container{
     background-color: white;
     padding:15px;
     width:70%;
