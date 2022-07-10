@@ -76,13 +76,13 @@ input.form-control{
     margin-bottom: 28px;
 }
 
-.row>.btn:hover:not(.custom), .selected{
+div .btn:hover:not(.custom), div .btn:focus:not(.custom), .selected{
     background-color: hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
     border:none;
 }
 
-.custom:hover, .inputselect{
+.custom:hover, .custom:focus,.inputselect{
     border:2px solid hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
 }
