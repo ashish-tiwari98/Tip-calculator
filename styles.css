@@ -17,16 +17,11 @@ h1 span{
     display: block;
 }
 
-@media only screen and (min-width:870px){
-    .container{
+.container{
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    }
-}
-
-.container{
     background-color: white;
     padding:15px;
     width:70%;
@@ -81,13 +76,13 @@ input.form-control{
     margin-bottom: 28px;
 }
 
-.row>.btn:hover:not(.custom), .selected{
+div .btn:hover:not(.custom), div .btn:focus:not(.custom), .selected{
     background-color: hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
     border:none;
 }
 
-.custom:hover, .inputselect{
+.custom:hover, .custom:focus,.inputselect{
     border:2px solid hsla(172, 67%, 45%,0.5);
     color:hsl(183, 100%, 15%);
 }
