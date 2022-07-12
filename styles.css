@@ -16,15 +16,20 @@ body>h1{
 h1 span{
     display: block;
 }
+@media only screen and (min-width:870px){
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);        
+    }
+}
 
 .container{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
     background-color: white;
     padding:15px;
     width:70%;
+    margin-bottom: 28px;
     border-radius: 12px;
 }
 

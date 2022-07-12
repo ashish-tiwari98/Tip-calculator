@@ -48,4 +48,5 @@ function calculate(t,b,n){
 
 $(".reset").on("click",function(){
   $(".bill, .btn.selected, .people").val("");
+  $(".tipamt, .total").text("$0.00");
 });
