@@ -175,8 +175,9 @@ div .btn:hover:not(.custom), div .btn:focus:not(.custom), .selected{
     .container{
         width:90%;
     }
-
-    .btn{
+    
+    .mob{
+        display: inline-block !important;
         width:50%;
     }
 }
