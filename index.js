@@ -17,18 +17,39 @@ function select(){
     $(this).addClass("selected");
 }
 
+let b=false;
 $(".bill, .people, .btn").change(validate);
 $(".btn").click(validate)
 function validate(){
-  let tip=($(".btn.selected").val());
-  let bill=($(".bill").val());
-  let numOfPeople=($(".people").val());
-  if(bill!="" && numOfPeople!="" && tip!="")
+  let tip=$(".btn.selected").val();
+  let bill=$(".bill").val();
+  let numOfPeople=$(".people").val();
+  if(bill!="" && numOfPeople!="" && tip!=""){
+    if(numOfPeople=="0" && b==false){
+      $("<span class='warn'>Can't be zero</span>").insertBefore(".people");
+      b=true;
+    }
+    else if(b==true)
+      {
+        $(".warn").remove();
+        b=false;
+      }
     calculate(tip,bill,numOfPeople);
+    }
+  else 
+  { if(numOfPeople=="0" && b==false){
+      $("<span class='warn'>Can't be zero</span>").insertBefore(".people");
+      b=true;
+    }
+    else{
+      $(".warn").remove();
+      b=false;
+    }
+  }
 }
 
 function calculate(t,b,n){
-    if(Number.isInteger(Number(n))){
+    if(Number.isInteger(Number(n)) && n!="0"){
       b=Number(b);
       n=Number(n).toFixed(0);
       t=Number(t);
@@ -40,9 +61,6 @@ function calculate(t,b,n){
     }
     else if(Number.isInteger(Number(n))==false){
       alert("Number of People should be Integer");
-    }
-    else{
-      alert("Enter required data");
     }
 }
 
